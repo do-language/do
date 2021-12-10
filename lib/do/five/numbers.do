@@ -44,7 +44,7 @@ number (number) + (number);
 number (number) - (number);
 number (number) . (number);
 number (number) / (real);
-real (real) % (real);
+relative (relative) % (relative);
 complex (complex) exp (complex);
 real log (real, real);
 

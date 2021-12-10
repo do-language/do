@@ -50,8 +50,8 @@ type signed (natural bits, symbol endianness) {
 type signed (natural bits) = signed(bits, ARCH_ENDIANNESS);
 type signed = signed(ARCH_BITS, ARCH_ENDIANNESS);
 
-binary(bits) (binary(unsigned bits)) :% (signed);  ~ Binary rotation
-binary(bits) (binary(unsigned bits)) :x (signed);  ~ Binary shift
+binary(unsigned bits) (binary(bits)) :% (signed);  ~ Binary rotation
+binary(unsigned bits) (binary(bits)) :x (signed);  ~ Binary shift
 
 ~ Type aliases are identified with an equal sign (=).
 
